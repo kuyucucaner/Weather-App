@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href = "../styles/weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="header">
+        <h1><i class="fa-solid fa-cloud" style="color: #ffffff;"></i>  Weather APP</h1>
+    </header>
+    <search class="search">
+        <input class="search-input" type="text" id="location-input" placeholder="Enter Your Location Here...">
+        <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+    </search>
+    <information class="information">
+        <div class="weather-header">
+            <div class="left-column">
+                <h1 id="weather-name"></h1>
+                <h2 id="weather-country"></h2>
+                <h3 id ="weather-localtime"></h3>
+            </div>
+            <div class="right-column">
+                <img id="weather-icon" src="" alt="Weather Icon">
+                <h2 id="weather-status"></h2>
+            </div>
+        </div>        
+        <div class="weather-body">
+            <h1 id="weather-info-c"></h1>
+            <h1 id="weather-info-f"></h1>
+        </div>
+        <div class="weather-footer">
+            <h3>Change Temperature Type</h3>
+            <button id="change-data"><i class="fa-solid fa-recycle" style="color: #000000;"></i></button>
+        </div>
+    </information>
+    <script src ="../src/weather.js"></script>
+
+</body>
+</html>

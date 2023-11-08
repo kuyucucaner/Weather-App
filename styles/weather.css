@@ -1,0 +1,131 @@
+body{
+    background-color: #EBE3D5;
+}
+.header {
+    position: fixed; /* Başlığı sabit yap */
+    top: 0;
+    left: 0; /* Sayfanın en üstüne yerleştir */
+    width: 100%; /* Genişlik tam sayfa genişliği olsun */
+    background-color: #776B5D; /* Başlık arka plan rengi */
+    color: #fff; /* Başlık metin rengi */
+    padding: 10px; /* İçeriğin etrafındaki boşluk */
+    text-align: center; /* Metni ortala */
+}
+.header h1 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;    
+    float: left;
+    margin-left: 20px;
+    margin-top: -10px; 
+
+}
+
+.search {
+    position: fixed;
+    top: 83px; /* Header yüksekliği kadar kaydırın */
+    left: 0;
+    width: 100%;
+    background-color: #B0A695;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.information {
+    position: fixed;
+    top: 50%; /* Sayfanın yüksekliğinin yarısı kadar kaydırın */
+    left: 50%; /* Sayfanın genişliğinin yarısı kadar kaydırın */
+    width: 30%;
+    background-color: #776B5D;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    transform: translate(-50%, -50%); /* Kutuyu merkeze hizalamak için transform kullanın */
+}
+#weather-info-f{
+    display: none;
+}
+.search-input {
+    padding: 10px; /* Dolgu ekleme */
+    border: 2px solid #3a3a3a; /* Kenarlık rengi */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    font-size: 16px; /* Metin boyutu */
+    width: 250px; /* Giriş alanı genişliği */
+    outline: none; /* Odak kenarlığını kaldır */
+}
+
+.search-input::placeholder {
+    color: #ccc; /* Giriş alanı içi metin rengi */
+}
+
+/* Fare üzerine gelindiğinde stil */
+.search-input:hover {
+    border-color: #272727; /* Kenarlık rengi değiştirme */
+}
+
+/* Odaklandığında stil */
+.search-input:focus {
+    border-color: #202020; /* Odaklandığında kenarlık rengi değiştirme */
+    box-shadow: 0 0 5px rgba(8, 8, 8, 0.5); /* Hafif bir gölge efekti */
+}
+.weather-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color:black;
+    background-color: #EBE3D5;
+}
+.weather-footer{
+    background-color: #EBE3D5;
+    border-radius: 20px;
+    color:black;
+
+}
+.weather-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Yatay hizalama için */
+}
+
+.weather-footer h3 {
+    margin-right: 10px; /* İki öğe arasında bir boşluk eklemek için isteğe bağlı */
+}
+
+.weather-body{
+    background-color: #EBE3D5;
+    border-radius: 20px;
+    color:black;
+}
+/* Sol sütun */
+.left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sağ sütun */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.fa-cloud {
+    margin-top: 30px;
+    font-size: 24px;
+}
+button {
+    background-color: #c4c4c4; /* Düğme arka plan rengi */
+    color: #fff; /* Düğme metin rengi */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    padding: 10px 20px; /* Dolguları ayarla */
+    cursor: pointer; /* Üzerine gelindiğinde imleci bir el işareti yap */
+    font-size: 16px; /* Metin boyutu */
+}
+
+button i {
+    font-size: 15px; /* İkonun boyutunu ayarla */
+}
