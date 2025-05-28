@@ -1,6 +1,6 @@
 # ☁️ Weather App
 
-**Weather App** is a simple web application that allows users to view real-time weather information for different cities. The app fetches weather data from an external API and displays temperature, conditions, and city-specific information in a clean UI.
+**Weather App** is a simple web application that allows users to view real-time weather information for different cities. The app fetches weather data from an external API and displays temperature, conditions, and city-specific information in a clean UI. 
 
 ---
 
