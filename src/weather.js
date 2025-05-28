@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const apiKey = "03804a54fc274297892155458230711"; // WeatherAPI'den aldığınız API anahtarını buraya ekleyin
 
     const weatherInfoC = document.getElementById("weather-info-c");
     const weatherInfoF = document.getElementById("weather-info-f");
